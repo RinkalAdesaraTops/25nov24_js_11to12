@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no=121 //321 121=121- palindrom no
+        let rev = 0
+        while(no>0){
+            let r= no%10 //123%10=3 12%10=2 1%10=1
+            rev = (rev*10)+r //0*10+3 = 3 3*10+2 = 32 32*10+1 = 321
+            no = Math.floor(no/10) //12 12/10=1 0
+        }
+        document.write('<br> Reverse no is '+rev)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //count no of digits
+        //sum of digits
+        // multiplication of digits
+        let no=153 //1 +5+ 3+2 
+        f=no
+        count=0
+        sum=0
+        let mult = 1
+        while(no>0){ //153>0 15>0 1>0
+            let r = no%10 //153%10 = 3 15%10=5 1%10=1
+            no = Math.floor(no/10) //153/10=15.3=15 15/10=1.5=1
+            count++ //1 2
+            sum = sum+r
+            mult = mult*r
+        }
+        document.write('<br> No of digits are '+count)
+        document.write('<br> '+f+' --- Sum of digits are '+sum)
+        document.write('<br> '+f+' --- Multiplication of digits are '+mult)
+    </script>
+</body>
+</html>
