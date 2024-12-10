@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,5]
+        document.write('<br> Array is '+a)
+        a.push(25) //last position add
+        document.write('<br> Array is '+a)
+        a.push(35)
+        document.write('<br> Array is '+a)
+        a.pop() //last position element delete
+        document.write('<br> Array is '+a)
+        a.unshift(33)  //first position add
+        document.write('<br> Array is '+a)
+        a.shift() //first position element delete
+        document.write('<br> Array is '+a)
+        //splice - positionwise data add or remove
+        a.splice(2,0,11,22,33,44,55)
+        document.write('<br> Array is '+a)
+        a.splice(3,2,100,200,300)
+        document.write('<br> Array is '+a)
+        let arr = a.slice(4)
+        document.write('<br> Array is '+arr)
+        //slice  - positionwise data get
+        arr = a.slice(2,7)
+        document.write('<br> Array is '+arr)
+        arr = a.slice(-8)
+        document.write('<br> Array is '+arr)
+        arr = a.slice(-8,-2)
+        document.write('<br> Array is '+arr)
+        let str = ["abc","xyz","pqr"]
+        let str2 = ["fggf","ert","puyiuiqr","rtyrty"]
+        let merge_arr = str.concat(str2)
+        document.write('<br> Merge array is '+merge_arr)
+        let fd = arr.includes(200)
+        document.write('<br> '+fd)
+    
+
+        
+
+        
+    </script>
+</body>
+</html>

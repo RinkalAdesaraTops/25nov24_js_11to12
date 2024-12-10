@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10
+        //array - collecton of data with same datatype
+        // let arr = []//blank array
+        let sum = 0
+        let arr = [10,20,30,40,50]//blank array
+        //access element 
+        // document.write('<br> '+arr[0])
+        // document.write('<br> '+arr[1])
+        // document.write('<br> '+arr[3])
+        let len = arr.length
+        document.write('<br> Length is '+len)
+        // for(let i=0;i<arr.length;i++){ //i=0;i<5
+        //     document.write('<br> '+arr[i])
+        // }
+        //for..of loop
+        for(var x of arr){
+            document.write('<br> x is '+x)
+            sum += x
+        } 
+        //for..in loop
+        for(var x in arr){
+            document.write('<br> x is '+arr[x])
+        }
+        document.write('<br> Sum of all elements are '+sum) 
+    </script>
+</body>
+</html>
