@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=25
+        let b=15
+        //fat arrow function
+        const add = ()=> document.write('<br> Addition is '+(a+b))
+        
+        const multiply = (a,b,c)=> document.write('<br> Multiply '+(a*b*c))
+        
+        let r = 2.5
+        const pi=3.14
+        const area = ()=> pi*r*r        
+        const cube = p => p*p*p
+        const fact = (no)=>{
+            let m=1
+            for(let i=no;i>=1;i--){
+                m*=i
+            }
+            return m
+        }
+        add()
+        let p = 10
+        let q=34
+        let f = 25
+        multiply(p,q,f)
+        document.write('<br> Area of circle is '+area())
+        document.write('<br> Cube is '+cube(5))
+        document.write('<br> Factorial is '+fact(5))
+    </script>
+</body>
+</html>

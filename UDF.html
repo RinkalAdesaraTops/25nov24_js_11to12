@@ -37,14 +37,15 @@
         // document.write('<br> Area of circle is '+ans)
          document.write('<br> Area of circle is '+area())
          document.write('<br> Cube is '+cube(5))
-        function fact(no){
+        function fact(){
+            let no = parseInt(prompt("Enter no"))
             let m=1
             for(let i=no;i>=1;i--){
                 m*=i
             }
             return m
         }
-        document.write('<br> Factorial is '+fact(5))
+        document.write('<br> Factorial is '+fact())
     </script>
 </body>
 </html>
