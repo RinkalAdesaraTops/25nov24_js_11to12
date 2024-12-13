@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,3]
+        document.write('<br> Array is '+arr)
+        //map - 
+        arr.map((i,index)=>{
+            console.log(index +" -- i is "+i);
+        })
+        let newarr = arr.map((i)=>{
+            return i*2
+        })
+        document.write('<br> original array is '+arr)
+        document.write('<br> new array is '+newarr)
+
+        newarr = arr.forEach((i,index)=>{
+            console.log(index +" -- i is "+(i*2));
+            return i*2
+        })
+        document.write('<br> new array is '+newarr)
+
+        // let search = arr.filter((i)=> {
+        //     return i==3
+        // })
+        let search = arr.filter((i)=> i==3 )
+        console.log(search);
+
+        let findfun = arr.find((i)=> i==3 )
+        console.log(findfun);
+        //1 2 3 4 5 3
+        let sum = arr.reduceRight((total,i)=>{
+            console.log("total is "+total);
+            console.log("i is "+i);
+            
+            return total+i //total = 1 i=2 1+2=3 total = 3 i3 total=6
+        },100)
+        console.log("Sum is "+sum);
+        
+    </script>
+</body>
+</html>
