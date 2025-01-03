@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // oop - object oriented programming
+        //4 principles
+        /*
+        1)Class & object
+        2)data abstration & encapsulation
+        3)Inheritance
+        4)polymorphism
+        */
+        class emp{
+            //normal func & constructor fun
+            // constructor(){ //default constructor
+            //     //it is special member func bcoz it automatically called when object is created
+            //     console.log("constructor called");              
+            //     this.a=10
+            //     this.b=20
+            // }
+            constructor(p,q){
+                this.a=p
+                this.b=q
+            }
+            add(){
+                console.log("Add func called..."+(this.a+this.b));
+            }
+        }
+        //object create
+        //blueprint of class/runtime entity
+        let obj = new emp(5,6)
+        //member func call
+        obj.add()
+
+        //employee class -- name,age ,salary 
+        //display 
+    </script>
+</body>
+</html>

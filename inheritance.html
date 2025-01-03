@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Inheritance - reusuability- parent-child
+        //polymorphism -- one name multiple form
+        //data abstration - data hiding 
+        //encapsulation --wrapping up of data into single unit
+        class abc{ //parent/Base/Super class
+            //function method overriding
+            constructor(){
+                console.log("parent constructor called");             
+            }
+            disp(){
+                console.log("disp-parent called.");                
+            }
+        }
+        class xyz extends abc{
+            constructor(){
+                super()
+                console.log("child constructor called");               
+            }
+            // dispChild(){
+            //     console.log("disp-child called.");                
+            // }
+            disp(){
+                super.disp()
+                console.log("disp-child called.");                
+            }
+        }
+        let obj = new xyz()
+        obj.disp()
+        // obj.dispChild()
+    </script>
+</body>
+</html>

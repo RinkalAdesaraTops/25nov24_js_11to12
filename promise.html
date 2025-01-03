@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const isEven=(no)=>{
+            return no%2==0
+        }
+        const HOC = (func,no)=>{
+                let a= func(no)
+                if(a==true){
+                    document.write('<br> It is even')               
+                } else{
+                    document.write('<br> It is odd')
+                }
+        }
+        HOC(isEven,28)
+        // pending
+        //fullfilled-resolved
+        //rejected
+        // let pr = new Promise((res,rej)=>{
+        //     rej("Promise cancelled")
+        //     res("Promise completed")
+        // }).then((msg)=>console.log(msg))
+        // .catch((msg)=>console.log("error msg is -- "+msg))
+        let pr = new Promise((res,rej)=>{
+            let age = 13
+            if(age>=18){
+                res("Eligible 4 vote")
+            } else {
+                rej("Not Eligible 4 vote")
+            }
+        }).then((msg)=>console.log(msg))
+        .catch((msg)=>console.log("error msg is -- "+msg))
+
+        //error - exception handle
+        try{
+            //error generate
+            let a=25
+            let b=0
+            if(b==0){
+                throw "Not divisible by zero"
+            } else {
+                document.write('<br> Division is '+(a/b))               
+            }
+        }catch(e){
+            document.write('<br> error msg is -- '+e)
+            
+        }
+    </script>
+</body>
+</html>
