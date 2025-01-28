@@ -3,6 +3,11 @@ import './App.css';
 import './Custom.css'
 import Mycomponent from './Mycomponent';
 import StateExample from './StateExample';
+import BootstrapExample from './BootstrapExample';
+import Header from './Header';
+import Section from './Section';
+import Lifecycleclass from './Lifecycleclass';
+import Lifecyclefunc from './Lifecyclefunc';
 
 function App() {
  let name="abcdefg"
@@ -12,7 +17,12 @@ function App() {
     <div>
       <h3>First Project</h3>
       {/* <Mycomponent myname={name} myage={age} arr={arr}/> */}
-      <StateExample />
+      {/* <StateExample /> */}
+      {/* <BootstrapExample /> */}
+      {/* <Header />
+      <Section /> */}
+      {/* <Lifecycleclass arr="array data"/> */}
+      <Lifecyclefunc />
     </div>
   );
 }
